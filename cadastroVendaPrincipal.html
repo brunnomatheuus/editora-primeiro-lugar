@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
 
-    <title>Cadastrar Livro</title>
+    <title>Cadastrar Venda</title>
 
     <style>
       body{
@@ -28,41 +28,30 @@
         </nav>
     </header>
 
-    <div class="card text-center container p-4 mt-5" style="max-width:500px; margin-top:8rem">
+    <div class="card text-center container p-4" style="max-width:500px; margin-top:8rem">
       <form action="/home" method="post" >
-        <h1 class="h3 mb-3 font-weight-normal">Cadastrar Livro</h1>
-        <div class="mb-3">
-          <input type="file" name="myFile">
-        </div>
-        <label for="nome" class="sr-only">Nome</label>
-        <input type="text" name="nome" class="form-control mb-2" placeholder="Nome" required autofocus>
-        <label for="autor" class="sr-only">Autor</label>
-        <input type="text" name="autor" class="form-control mb-2" placeholder="Autor" required autofocus>
-        
+        <h3 class="mb-3">Cadastrar Venda</h3>
+        <h5 class="mb-3 float-left">Nome do livro</h5>
 
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="livroDireitoAutoral" name="radio" class="custom-control-input active">
-          <label class="custom-control-label" for="livroDireitoAutoral">Livro Próprio</label>
-        </div>
-        <div class="custom-control custom-radio custom-control-inline">
-          <input type="radio" id="livroConsignacao" name="radio" class="custom-control-input">
-          <label class="custom-control-label" for="livroConsignacao">Livro Consignado</label>
-        </div>
-
-        <label for="direitoAutoral" class="sr-only">Direito Autoral</label>
-        <input type="text" id="direitoAutoral" name="direitoAutoral" class="form-control mt-2 mb-2" placeholder="Porcentagem de direito autoral" required autofocus style="display: none">
-        <label for="consignacao" class="sr-only">Consignação</label>
-        <input type="text" id="consignacao" name="consignacao" class="form-control mt-2 mb-2" placeholder="Porcentagem de Consignação" required autofocus style="display: none">        
-        
         <label for="qtd" class="sr-only">Quantidade</label>
-        <input type="text" name="qtd" class="form-control mb-2" placeholder="Quantidade" required autofocus>
+        <input type="number" name="qtd" class="form-control mb-2" placeholder="Quantidade" required autofocus>
 
         <label for="valor" class="sr-only">Valor</label>
-        <input type="text" name="valor" class="form-control mb-2" placeholder="Valor - R$" required autofocus>
+        <input type="number" name="valor" class="form-control mb-2" placeholder="Valor" required autofocus>
 
-        <label for="descricao" class="sr-only">Descricao</label>
-        <textarea name="descricao" class="form-control mb-2" rows="5" placeholder="Descrição" required autofocus></textarea>
+        <select id="inputMetodo" class="form-control mb-2">
+          <option selected>Escolha o método de pagamento...</option>
+          <option>Espécie</option>
+          <option>Débito</option>
+          <option>Crédito</option>
+        </select>
 
+        <label for="dataFaturamento" class="sr-only">Data Faturamento</label>
+        <input type="date" name="dataFaturamento" class="form-control mb-2" placeholder="Data de faturamento" required autofocus>
+
+        <label for="numPedido" class="sr-only">Número do pedido</label>
+        <input type="number" name="numPedido" class="form-control mb-2" placeholder="Número do pedido????" required autofocus>
+        
         <a class="btn btn-lg btn-dark mt-3" href="index.html">Cancelar</a>
         <button class="btn btn-lg btn-dark mt-3" type="submit">Cadastrar</button>
       </form>

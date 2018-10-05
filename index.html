@@ -18,13 +18,19 @@
         .dropdown-item:hover{
           background-color: black;
         }
+
+        body {
+          font-family: 'Courier New', Courier, monospace;
+          background-image: linear-gradient(to bottom, rgba(0,0,0,0.8) 0%,rgba(0,0,0,0.8) 100%), url("images/bg-book.jpg");
+          background-attachment: fixed;
+        }
       </style>
   </head>
   <body>
     
     <header>
         <nav class="navbar navbar-expand-sm navbar-dark bg-light">
-            <a class="navbar-brand" href="#" style="height:20pt"><img class="mb-4" src="images/logo.png" alt="LOGO" height="20"></a>
+            <a class="navbar-brand" href="index.html" style="height:20pt"><img class="mb-4" src="images/logo.png" alt="LOGO" height="20"></a>
             
             <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,8 +48,8 @@
                         Cadastro
                       </a>
                       <div class="dropdown-menu bg-dark" aria-labelledby="dropdownCadastro">
-                        <a class="dropdown-item text-white" href="#"><img src="assets/outline_book_white_18dp.png"></i> Livro</a>
-                        <a class="dropdown-item text-white" href="#"><img src="assets/outline_attach_money_white_18dp.png"> Venda</a>
+                        <a class="dropdown-item text-white" href="cadastroLivro.html"><img src="assets/outline_book_white_18dp.png"></i> Livro</a>
+                        <a class="dropdown-item text-white" href="cadastroVenda1.html"><img src="assets/outline_attach_money_white_18dp.png"> Venda</a>
                       </div>
                     </li>
                   </ul>
@@ -82,10 +88,10 @@
       </header>
 
       <div class="container mt-5">
-        <h1>Livros</h1>
-        <div class="list-group">
+        <h1 class="text-white" data-scrollreveal="enter left after 0.20s over 1s">Livros</h1>
+        <div class="list-group mb-5">
 
-          <a class="list-group-item list-group-item-action" 
+          <a class="list-group-item list-group-item-action" data-scrollreveal="enter right after 0.20s over 1s"
           data-toggle="collapse" href="#collapseLivro1" role="button" aria-expanded="false" aria-controls="collapseLivro1">
             <div class="d-flex">
               <img src="images/dadosfc.jpg" height="72" width="72">
@@ -96,6 +102,7 @@
                 </div>
                 <div>
                   <p class="mb-1">Vitor A. Príncipe</p>
+                  <img src="assets/outline_keyboard_arrow_down_black_18dp.png">
                 </div>
               </div>
             </div>
@@ -103,13 +110,18 @@
             <div id="collapseLivro1" class="collapse" align="justify">
               <div class="card-body">
                 <p class="mt-3">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+                <h4 class="mt-2"><b>DETALHES:</b></h4>
+                <p class="mt-2">O livro é: próprio (consignado)</p>
+                <p class="mt-2">Valor: R$50,00</p>
+                <p class="mt-2">Taxa de Direito Autoral ou Taxa de Consignação: 5% ou 95%</p>
+                <p class="mt-2">Quantidade inicial: 100</p>
+                <p class="mt-2">Quantidade atual: 50</p>
                 <button type="button" class="btn bg-dark text-white mt-2" onclick="window.location.href='#'">Cadastrar Venda</button>
-                <button type="button" class="btn bg-dark text-white mt-2" onclick="window.location.href='#'">Detalhes</button>
               </div>
             </div>
           </a>
 
-          <a class="list-group-item list-group-item-action"
+          <a class="list-group-item list-group-item-action" data-scrollreveal="enter right after 0.20s over 1s"
           data-toggle="collapse" href="#collapseLivro2" role="button" aria-expanded="false" aria-controls="collapseLivro2">
             <div class="d-flex">
               <img src="images/moura.jpg" height="72" width="72">
@@ -120,15 +132,23 @@
                 </div>
                 <div>
                   <p class="mb-1">Bruno Araújo</p>
+                  <img src="assets/outline_keyboard_arrow_down_black_18dp.png">
                 </div>
+                
               </div>
             </div>
             <div id="collapseLivro2" class="collapse" align="justify">
               <p class="mt-3">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.</p>
+              <h4 class="mt-2"><b>DETALHES:</b></h4>
+              <p class="mt-2">O livro é: próprio (consignado)</p>
+              <p class="mt-2">Valor: R$50,00</p>
+              <p class="mt-2">Taxa de Direito Autoral ou Taxa de Consignação: 5% ou 95%</p>
+              <p class="mt-2">Quantidade inicial: 100</p>
+              <p class="mt-2">Quantidade atual: 50</p>
               <button type="button" class="btn bg-dark text-white mt-2" onclick="window.location.href='#'">Cadastrar Venda</button>
-              <button type="button" class="btn bg-dark text-white mt-2" onclick="window.location.href='#'">Detalhes</button>
             </div>
           </a>
+
         </div>
       </div>
 
@@ -137,5 +157,6 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type='text/javascript' src='http://naracosta.com/wp-content/themes/zerif-lite/js/scrollReveal.js?ver=20120206'></script>
   </body>
 </html>
