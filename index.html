@@ -29,55 +29,43 @@
   <body>
     
     <header>
-        <nav class="navbar navbar-expand-sm navbar-dark bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-light">
             <a class="navbar-brand" href="index.html" style="height:20pt"><img class="mb-4" src="images/logo.png" alt="LOGO" height="20"></a>
             
-            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler bg-dark" type="button" data-toggle="collapse" data-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-                  
-              <li class="nav-item ml-1">
-                <div class="collapse navbar-collapse">
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle btn text-white bg-dark" href="#" id="dropdownCadastro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/outline_add_white_18dp.png">
-                        Cadastro
-                      </a>
-                      <div class="dropdown-menu bg-dark" aria-labelledby="dropdownCadastro">
-                        <a class="dropdown-item text-white" href="cadastroLivro.html"><img src="assets/outline_book_white_18dp.png"></i> Livro</a>
-                        <a class="dropdown-item text-white" href="cadastroVenda1.html"><img src="assets/outline_attach_money_white_18dp.png"> Venda</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
-  
-              <li class="nav-item ml-1">
-                <div class="collapse navbar-collapse">
-                  <ul class="navbar-nav">
-                    <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle btn text-white bg-dark" href="#" id="dropdownRelatorio" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="assets/outline_description_white_18dp.png">
-                        Gerar Relatório
-                      </a>
-                      <div class="dropdown-menu bg-dark" aria-labelledby="dropdownRelatorio">
-                        <a class="dropdown-item text-white" href="#">Mensal</a>
-                        <a class="dropdown-item text-white" href="#">Trimestral</a>
-                        <a class="dropdown-item text-white" href="#">Anual</a>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </li>
+            <div class="collapse navbar-collapse justify-content-center" id="nav">
+              <ul class="navbar-nav">
+                    
+                <li class="nav-item m-1 dropdown">
+                  <a class="nav-link dropdown-toggle btn text-white bg-dark" href="#" id="dropdownCadastro" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/outline_add_white_18dp.png">
+                    Cadastro
+                  </a>
+                  <div class="dropdown-menu bg-dark" aria-labelledby="dropdownCadastro">
+                    <a class="dropdown-item text-white" href="cadastroLivro.html"><img src="assets/outline_book_white_18dp.png"></i> Livro</a>
+                    <a class="dropdown-item text-white" href="cadastroVenda1.html"><img src="assets/outline_attach_money_white_18dp.png"> Venda</a>
+                  </div>
+                </li>
+    
+                <li class="nav-item m-1 dropdown">
+                  <a class="nav-link dropdown-toggle btn text-white bg-dark" href="#" id="dropdownRelatorio" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/outline_description_white_18dp.png">
+                    Gerar Relatório
+                  </a>
+                  <div class="dropdown-menu bg-dark" aria-labelledby="dropdownRelatorio">
+                    <a class="dropdown-item text-white" href="#">Mensal</a>
+                    <a class="dropdown-item text-white" href="#">Trimestral</a>
+                    <a class="dropdown-item text-white" href="#">Anual</a>
+                  </div>
+                </li>
 
             </ul>
           </div>  
 
-          <div class="float-right" id="navbarNav">
+          <div class="float-right">
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link text-dark" href="#"><img src="assets/outline-exit_to_app-24px.svg"> Sair</a>
